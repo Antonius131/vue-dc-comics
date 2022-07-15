@@ -6,6 +6,10 @@
          </div>
          <div id="nav-menu">
             <ul>
+               <li v-for="(link, index) in navMenuItems"
+                   :key="index">
+                   <a :href="link.link">{{ link.text }}</a>
+               </li>
             </ul>
          </div>
       </nav>
