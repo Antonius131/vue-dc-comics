@@ -1,6 +1,15 @@
 <template>
   <footer>
-      <h1>Primary Footer</h1>
+    <div class="container">
+      <div id="footer-nav">
+        <nav>
+
+        </nav>
+        <div>
+
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -10,6 +19,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  footer {
+    padding: 2rem 0rem;
+    background-image: url(../assets/img/footer-bg.jpg);
+    color: #fff;
+  }
 
+  #footer-nav {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+  }
 </style>
