@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <div id="wrapper">
-      <MainHeader />
-      <MainContent />
-      <PrimaryFooter />
-      <SecondaryFooter />
-    </div>
+    <MainHeader />
+    <MainContent />
+    <PrimaryFooter />
+    <SecondaryFooter />
   </div>
 </template>
 
@@ -42,7 +40,7 @@ export default {
   // margin-top: 60px;
 }
 
-#wrapper {
+.container {
   width: 70%;
   margin: 0 auto;
 }

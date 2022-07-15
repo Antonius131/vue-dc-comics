@@ -1,5 +1,6 @@
 <template>
   <header>
+   <div class="container">
       <nav>
          <div id="logo">
             <img src="../assets/img/dc-logo.png" alt="DC logo">
@@ -13,6 +14,7 @@
             </ul>
          </div>
       </nav>
+   </div>
   </header>
 </template>
 
@@ -82,7 +84,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem;
+      padding: 1rem 0rem;
    }
 
    #logo img {
