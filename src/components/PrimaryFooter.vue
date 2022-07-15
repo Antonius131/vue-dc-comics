@@ -1,54 +1,58 @@
 <template>
   <footer>
     <div class="container">
-      <div id="footer-nav">
-        <nav id="nav-items-block">
-          <div class="item-block">
-            <div class="item">
-              <h4>DC Comics</h4>
-              <ul>
-                <li v-for="(link, index) in dcComicsMenu"
-                    :key="index">
-                  <a :href="link.link">{{ link.text }}</a>
-                </li>
-              </ul>
-            </div>
-            <div class="item">
-              <h4>Shop</h4>
-              <ul>
-                <li v-for="(link, index) in dcShopMenu"
-                    :key="index">
-                  <a :href="link.link">{{ link.text }}</a>
-                </li>
-              </ul>
-            </div> 
-          </div>
-          <div class="item-block">
-            <div class="item">
-              <h4>DC</h4>
-              <ul>
-                  <li v-for="(link, index) in dcMenu"
+      <div class="d-flex">
+        <div id="footer-nav">
+          <nav id="nav-items-block">
+            <div class="item-block">
+              <div class="item">
+                <h4>DC Comics</h4>
+                <ul>
+                  <li v-for="(link, index) in dcComicsMenu"
                       :key="index">
                     <a :href="link.link">{{ link.text }}</a>
                   </li>
-              </ul>
+                </ul>
+              </div>
+              <div class="item">
+                <h4>Shop</h4>
+                <ul>
+                  <li v-for="(link, index) in dcShopMenu"
+                      :key="index">
+                    <a :href="link.link">{{ link.text }}</a>
+                  </li>
+                </ul>
+              </div> 
             </div>
-          </div>
-          <div class="item-block">
-            <div class="item">
-              <h4>Sites</h4>
-              <ul>
-                <li v-for="(link, index) in sitesMenu"
-                    :key="index">
-                  <a :href="link.link">{{ link.text }}</a>
-                </li>
-              </ul>
+            <div class="item-block">
+              <div class="item">
+                <h4>DC</h4>
+                <ul>
+                    <li v-for="(link, index) in dcMenu"
+                        :key="index">
+                      <a :href="link.link">{{ link.text }}</a>
+                    </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </nav>
-        
-        <div>
-       </div>
+            <div class="item-block">
+              <div class="item">
+                <h4>Sites</h4>
+                <ul>
+                  <li v-for="(link, index) in sitesMenu"
+                      :key="index">
+                    <a :href="link.link">{{ link.text }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <div>
+        </div>
+        </div>
+        <div id="dc-image">
+        </div>
       </div>
     </div>
   </footer>
@@ -173,9 +177,21 @@ export default {
 
 <style scoped>
   footer {
-    padding: 2rem 0rem;
     background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer-nav {
+    width: 55%;
+    padding: 2rem 0rem;
   }
 
   #nav-items-block {
@@ -207,5 +223,14 @@ export default {
   .item a {
     text-decoration: none;
     color: rgba(255,255,255,.5);
+  }
+
+  #dc-image {
+    width: 45%;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 360px;
   }
 </style>
