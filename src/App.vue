@@ -2,21 +2,25 @@
   <div id="app">
     <MainHeader />
     <MainContent />
-    <MainFooter />
+    <PrimaryFooter />
+    <SecondaryFooter />
   </div>
 </template>
 
 <script>
 import MainHeader from './components/MainHeader.vue';
 import MainContent from './components/MainContent.vue';
-import MainFooter from './components/MainFooter.vue';
+import PrimaryFooter from './components/PrimaryFooter.vue';
+import SecondaryFooter from './components/SecondaryFooter.vue';
+
 
 export default {
   name: 'App',
   components: {
     MainHeader,
     MainContent,
-    MainFooter
+    PrimaryFooter,
+    SecondaryFooter
 }
 }
 </script>
