@@ -7,7 +7,7 @@
             <div class="item">
               <h3>DC Comics</h3>
               <ul>
-                <li v-for="(link, index) in dcMenuItems"
+                <li v-for="(link, index) in dcComicsMenu"
                     :key="index">
                   <a :href="link.link">{{ link.text }}</a>
                 </li>
@@ -16,11 +16,19 @@
             <div class="item">
               <h3>Shop</h3>
               <ul>
-                <li></li>
+                <li v-for="(link, index) in dcShopMenu"
+                    :key="index">
+                  <a :href="link.link">{{ link.text }}</a>
+                </li>
               </ul>
             </div> 
           </div>
-          <div class="item-block"></div>
+          <div class="item-block">
+            <h3>DC</h3>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
         </nav>
         
         <div>
@@ -34,7 +42,7 @@
 export default {
   data: function() {
     return {
-      dcMenuItems: [
+      dcComicsMenu: [
         {
             text: 'characters',
             link: '#' 
@@ -62,6 +70,16 @@ export default {
         {
             text: 'news',
             link: '#' 
+        }
+      ],
+      dcShopMenu: [
+        {
+          text: 'Shop DC',
+          link: '#'
+        },
+        {
+          text: 'Shop DC Collectibles',
+          link: '#'
         }
       ]
     }
