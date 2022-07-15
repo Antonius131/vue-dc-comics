@@ -67,6 +67,32 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+   }
 
+   #logo img {
+      height: 60px;
+   }
+
+   ul {
+      list-style: none;
+   }
+
+   ul li {
+      display: inline-block;
+      padding: .8rem;
+      font-size: .75rem;
+      text-transform: uppercase;
+      font-weight: 600;
+   }
+
+   #nav-menu a {
+      text-decoration: none;
+      color: #212112;
+   }
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <MainHeader />
-    <MainContent />
-    <PrimaryFooter />
-    <SecondaryFooter />
+    <div id="wrapper">
+      <MainHeader />
+      <MainContent />
+      <PrimaryFooter />
+      <SecondaryFooter />
+    </div>
   </div>
 </template>
 
@@ -26,12 +28,22 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // text-align: center;
+  // color: #2c3e50;
+  // margin-top: 60px;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
 }
 </style>
