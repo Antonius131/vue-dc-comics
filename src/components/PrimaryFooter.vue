@@ -26,7 +26,19 @@
           <div class="item-block">
             <h3>DC</h3>
             <ul>
-              <li></li>
+                <li v-for="(link, index) in dcMenu"
+                    :key="index">
+                  <a :href="link.link">{{ link.text }}</a>
+                </li>
+            </ul>
+          </div>
+          <div class="item-block">
+            <h3>Sites</h3>
+            <ul>
+              <li v-for="(link, index) in sitesMenu"
+                  :key="index">
+                <a :href="link.link">{{ link.text }}</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -81,7 +93,75 @@ export default {
           text: 'Shop DC Collectibles',
           link: '#'
         }
-      ]
+      ],
+      dcMenu: [
+        {
+          text: 'Terms Of Use',
+          link: '#'
+        },
+        {
+          text: 'Privacy Policy (New)',
+          link: '#'
+        },
+        {
+          text: 'Ad Choices',
+          link: '#'
+        },
+        {
+          text: 'Advertising',
+          link: '#'
+        },
+        {
+          text: 'Jobs',
+          link: '#'
+        },
+        {
+          text: 'Subscription',
+          link: '#'
+        },
+        {
+          text: 'Talen Workshops',
+          link: '#'
+        },
+        {
+          text: 'CPSC Certificates',
+          link: '#'
+        },
+        {
+          text: 'Ratings',
+          link: '#'
+        },
+        {
+          text: 'Shop Help',
+          link: '#'
+        },
+        {
+          text: 'Contact Us',
+          link: '#'
+        },
+      ],
+      sitesMenu: [
+        {
+          text: 'DC',
+          link: '#'
+        },
+        {
+          text: 'MAD Magazine',
+          link: '#'
+        },
+        {
+          text: 'DC Kids',
+          link: '#'
+        },
+        {
+          text: 'DC Universe',
+          link: '#'
+        },
+        {
+          text: 'DC Power Visa',
+          link: '#'
+        }
+      ],
     }
   }
 }
