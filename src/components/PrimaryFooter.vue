@@ -5,7 +5,7 @@
         <nav id="nav-items-block">
           <div class="item-block">
             <div class="item">
-              <h3>DC Comics</h3>
+              <h4>DC Comics</h4>
               <ul>
                 <li v-for="(link, index) in dcComicsMenu"
                     :key="index">
@@ -14,7 +14,7 @@
               </ul>
             </div>
             <div class="item">
-              <h3>Shop</h3>
+              <h4>Shop</h4>
               <ul>
                 <li v-for="(link, index) in dcShopMenu"
                     :key="index">
@@ -24,22 +24,26 @@
             </div> 
           </div>
           <div class="item-block">
-            <h3>DC</h3>
-            <ul>
-                <li v-for="(link, index) in dcMenu"
+            <div class="item">
+              <h4>DC</h4>
+              <ul>
+                  <li v-for="(link, index) in dcMenu"
+                      :key="index">
+                    <a :href="link.link">{{ link.text }}</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-block">
+            <div class="item">
+              <h4>Sites</h4>
+              <ul>
+                <li v-for="(link, index) in sitesMenu"
                     :key="index">
                   <a :href="link.link">{{ link.text }}</a>
                 </li>
-            </ul>
-          </div>
-          <div class="item-block">
-            <h3>Sites</h3>
-            <ul>
-              <li v-for="(link, index) in sitesMenu"
-                  :key="index">
-                <a :href="link.link">{{ link.text }}</a>
-              </li>
-            </ul>
+              </ul>
+            </div>
           </div>
         </nav>
         
@@ -174,9 +178,34 @@ export default {
     color: #fff;
   }
 
-  #footer-nav {
+  #nav-items-block {
     display: flex;
     align-content: space-between;
-    align-items: center;
+  }
+
+  .item-block {
+    margin-right: 1.5rem;
+  }
+
+  .item {
+    margin-bottom: 1rem;
+  }
+
+  .item h4 {
+    text-transform: uppercase;
+    margin-bottom: .55rem;
+  }
+
+  .item ul {
+    list-style: none;
+    font-size: .75rem;
+  }
+
+  .item li {
+    padding: .2rem;
+  }
+  .item a {
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
   }
 </style>
