@@ -15,7 +15,40 @@
 
 <script>
 export default {
-
+  data: function() {
+    return {
+      footerMenuItems: [
+            {
+               text: 'characters',
+               link: '#' 
+            },
+            {
+               text: 'comics',
+               link: '#',
+            },
+            {
+               text: 'movies',
+               link: '#' 
+            },
+            {
+               text: 'tv',
+               link: '#' 
+            },
+            {
+               text: 'games',
+               link: '#' 
+            },
+            {
+               text: 'videos',
+               link: '#' 
+            },
+            {
+               text: 'news',
+               link: '#' 
+            }
+         ]
+    }
+  }
 }
 </script>
 
