@@ -8,7 +8,7 @@
             <ul>
                <li v-for="(link, index) in navMenuItems"
                    :key="index">
-                   <a :href="link.link">{{ link.text }}</a>
+                   <a :href="link.link" :class="{'active' : link.active}">{{ link.text }}</a>
                </li>
             </ul>
          </div>
@@ -23,43 +23,53 @@ export default {
          navMenuItems: [
             {
                text: 'characters',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'comics',
-               link: '#', 
+               link: '#',
+               active: true, 
             },
             {
                text: 'movies',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'tv',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'games',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'collectibles',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'videos',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'fans',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'news',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
             {
                text: 'shop',
-               link: '#', 
+               link: '#',
+               active: false, 
             },
          ]
       }
@@ -94,5 +104,9 @@ export default {
    #nav-menu a {
       text-decoration: none;
       color: #212112;
+   }
+
+   #nav-menu a.active {
+      color: #3682F9;
    }
 </style>
