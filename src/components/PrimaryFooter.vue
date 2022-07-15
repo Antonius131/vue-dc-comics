@@ -2,12 +2,29 @@
   <footer>
     <div class="container">
       <div id="footer-nav">
-        <nav>
-
+        <nav id="nav-items-block">
+          <div class="item-block">
+            <div class="item">
+              <h3>DC Comics</h3>
+              <ul>
+                <li v-for="(link, index) in dcMenuItems"
+                    :key="index">
+                  <a :href="link.link">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <h3>Shop</h3>
+              <ul>
+                <li></li>
+              </ul>
+            </div> 
+          </div>
+          <div class="item-block"></div>
         </nav>
+        
         <div>
-
-        </div>
+       </div>
       </div>
     </div>
   </footer>
@@ -17,36 +34,36 @@
 export default {
   data: function() {
     return {
-      footerMenuItems: [
-            {
-               text: 'characters',
-               link: '#' 
-            },
-            {
-               text: 'comics',
-               link: '#',
-            },
-            {
-               text: 'movies',
-               link: '#' 
-            },
-            {
-               text: 'tv',
-               link: '#' 
-            },
-            {
-               text: 'games',
-               link: '#' 
-            },
-            {
-               text: 'videos',
-               link: '#' 
-            },
-            {
-               text: 'news',
-               link: '#' 
-            }
-         ]
+      dcMenuItems: [
+        {
+            text: 'characters',
+            link: '#' 
+        },
+        {
+            text: 'comics',
+            link: '#',
+        },
+        {
+            text: 'movies',
+            link: '#' 
+        },
+        {
+            text: 'tv',
+            link: '#' 
+        },
+        {
+            text: 'games',
+            link: '#' 
+        },
+        {
+            text: 'videos',
+            link: '#' 
+        },
+        {
+            text: 'news',
+            link: '#' 
+        }
+      ]
     }
   }
 }
