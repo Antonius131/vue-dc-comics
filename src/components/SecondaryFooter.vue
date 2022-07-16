@@ -3,12 +3,12 @@
     <div class="container">
       <nav>
           <div id="logo">
-            <button type="button" class="btn">Sign up now</button>
+            <button type="button" class="btn">Sign up now!</button>
           </div>
-          <div id="nav-menu">
-            <ul>
+          <div>
+            <ul class="d-flex">
               <li>
-                <h3>Follow us</h3>
+                <h4>Follow us</h4>
               </li>
               <li>
                 <img src="../assets/img/footer-facebook.png" alt="Facebook ico">
@@ -49,5 +49,37 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0rem;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h4 {
+    color: #3682F9;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0rem .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  ul img {
+  height: 1.5rem;
+  }
+
+  button.btn {
+    padding: .75rem;
+    background-color: transparent;
+    border: 2px solid #3682F9;
+    color: #fff;
+    text-transform: uppercase;
   }
 </style>
