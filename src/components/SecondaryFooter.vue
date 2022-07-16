@@ -10,8 +10,9 @@
               <li>
                 <h4>Follow us</h4>
               </li>
-              <li>
-                <img src="" alt="">
+              <li v-for="(icon, index) in socialIcons"
+                  :key="index">
+                <img :src="imagePath(index)" :alt="icon.alt">
               </li>
             </ul>
           </nav>
