@@ -11,19 +11,7 @@
                 <h4>Follow us</h4>
               </li>
               <li>
-                <img src="../assets/img/footer-facebook.png" alt="Facebook ico">
-              </li>
-              <li>
-                <img src="../assets/img/footer-twitter.png" alt="Twitter ico">
-              </li>
-              <li>
-                <img src="../assets/img/footer-youtube.png" alt="YouTube ico">
-              </li>
-              <li>
-                <img src="../assets/img/footer-pinterest.png" alt="Pinterest ico">
-              </li>
-              <li>
-                <img src="../assets/img/footer-periscope.png" alt="Periscope ico">
+                <img src="" alt="">
               </li>
             </ul>
           </nav>
@@ -34,7 +22,42 @@
 
 <script>
 export default {
-
+  data: function() {
+    return {
+      socialIcons: [
+        {
+          fileName: 'footer-facebook.png',
+          alt: 'Facebook ico',
+          link: '#',
+          path: '../assets/img/'
+        },
+        {
+          fileName: 'footer-twitter.png',
+          alt: 'Twitter ico',
+          link: '#',
+          path: '../assets/img/'
+        },
+        {
+          fileName: 'footer-youtube.png',
+          alt: 'YouTUbe ico',
+          link: '#',
+          path: '../assets/img/'
+        },
+        {
+          fileName: 'footer-pinterest.png',
+          alt: 'Pinterest ico',
+          link: '#',
+          path: '../assets/img/'
+        },
+        {
+          fileName: 'footer-periscope.png',
+          alt: 'Periscope ico',
+          link: '#',
+          path: '../assets/img/'
+        }
+      ]
+    }
+  }
 }
 </script>
 
