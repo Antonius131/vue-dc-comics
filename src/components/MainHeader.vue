@@ -3,7 +3,9 @@
    <div class="container">
       <nav>
          <div id="logo">
-            <img src="../assets/img/dc-logo.png" alt="DC logo">
+            <a href="#">
+               <img src="../assets/img/dc-logo.png" alt="DC logo">
+            </a>
          </div>
          <div id="nav-menu">
             <ul>
