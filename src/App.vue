@@ -3,7 +3,6 @@
     <MainHeader />
     <MainContent />
     <PrimaryFooter />
-    <SecondaryFooter />
   </div>
 </template>
 
@@ -11,7 +10,6 @@
 import MainHeader from './components/MainHeader.vue';
 import MainContent from './components/MainContent.vue';
 import PrimaryFooter from './components/PrimaryFooter.vue';
-import SecondaryFooter from './components/SecondaryFooter.vue';
 
 
 export default {
@@ -20,7 +18,6 @@ export default {
     MainHeader,
     MainContent,
     PrimaryFooter,
-    SecondaryFooter
 }
 }
 </script>

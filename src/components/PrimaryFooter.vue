@@ -55,123 +55,127 @@
         </div>
       </div>
     </div>
+    <SecondaryFooter />
   </footer>
 </template>
 
 <script>
+import SecondaryFooter from './SecondaryFooter.vue'
+
 export default {
-  data: function() {
-    return {
-      dcComicsMenu: [
-        {
-            text: 'characters',
-            link: '#' 
-        },
-        {
-            text: 'comics',
-            link: '#',
-        },
-        {
-            text: 'movies',
-            link: '#' 
-        },
-        {
-            text: 'tv',
-            link: '#' 
-        },
-        {
-            text: 'games',
-            link: '#' 
-        },
-        {
-            text: 'videos',
-            link: '#' 
-        },
-        {
-            text: 'news',
-            link: '#' 
-        }
-      ],
-      dcShopMenu: [
-        {
-          text: 'Shop DC',
-          link: '#'
-        },
-        {
-          text: 'Shop DC Collectibles',
-          link: '#'
-        }
-      ],
-      dcMenu: [
-        {
-          text: 'Terms Of Use',
-          link: '#'
-        },
-        {
-          text: 'Privacy Policy (New)',
-          link: '#'
-        },
-        {
-          text: 'Ad Choices',
-          link: '#'
-        },
-        {
-          text: 'Advertising',
-          link: '#'
-        },
-        {
-          text: 'Jobs',
-          link: '#'
-        },
-        {
-          text: 'Subscription',
-          link: '#'
-        },
-        {
-          text: 'Talen Workshops',
-          link: '#'
-        },
-        {
-          text: 'CPSC Certificates',
-          link: '#'
-        },
-        {
-          text: 'Ratings',
-          link: '#'
-        },
-        {
-          text: 'Shop Help',
-          link: '#'
-        },
-        {
-          text: 'Contact Us',
-          link: '#'
-        },
-      ],
-      sitesMenu: [
-        {
-          text: 'DC',
-          link: '#'
-        },
-        {
-          text: 'MAD Magazine',
-          link: '#'
-        },
-        {
-          text: 'DC Kids',
-          link: '#'
-        },
-        {
-          text: 'DC Universe',
-          link: '#'
-        },
-        {
-          text: 'DC Power Visa',
-          link: '#'
-        }
-      ],
-    }
-  }
+    data: function () {
+        return {
+            dcComicsMenu: [
+                {
+                    text: "characters",
+                    link: "#"
+                },
+                {
+                    text: "comics",
+                    link: "#",
+                },
+                {
+                    text: "movies",
+                    link: "#"
+                },
+                {
+                    text: "tv",
+                    link: "#"
+                },
+                {
+                    text: "games",
+                    link: "#"
+                },
+                {
+                    text: "videos",
+                    link: "#"
+                },
+                {
+                    text: "news",
+                    link: "#"
+                }
+            ],
+            dcShopMenu: [
+                {
+                    text: "Shop DC",
+                    link: "#"
+                },
+                {
+                    text: "Shop DC Collectibles",
+                    link: "#"
+                }
+            ],
+            dcMenu: [
+                {
+                    text: "Terms Of Use",
+                    link: "#"
+                },
+                {
+                    text: "Privacy Policy (New)",
+                    link: "#"
+                },
+                {
+                    text: "Ad Choices",
+                    link: "#"
+                },
+                {
+                    text: "Advertising",
+                    link: "#"
+                },
+                {
+                    text: "Jobs",
+                    link: "#"
+                },
+                {
+                    text: "Subscription",
+                    link: "#"
+                },
+                {
+                    text: "Talen Workshops",
+                    link: "#"
+                },
+                {
+                    text: "CPSC Certificates",
+                    link: "#"
+                },
+                {
+                    text: "Ratings",
+                    link: "#"
+                },
+                {
+                    text: "Shop Help",
+                    link: "#"
+                },
+                {
+                    text: "Contact Us",
+                    link: "#"
+                },
+            ],
+            sitesMenu: [
+                {
+                    text: "DC",
+                    link: "#"
+                },
+                {
+                    text: "MAD Magazine",
+                    link: "#"
+                },
+                {
+                    text: "DC Kids",
+                    link: "#"
+                },
+                {
+                    text: "DC Universe",
+                    link: "#"
+                },
+                {
+                    text: "DC Power Visa",
+                    link: "#"
+                }
+            ],
+        };
+    },
+    components: { SecondaryFooter }
 }
 </script>
 
