@@ -226,6 +226,10 @@ export default {
     a {
       text-decoration: none;
       color: $font_secondary_rgba;
+
+      &:hover {
+        color: $font_secondary;
+      }
     }
   }
 
