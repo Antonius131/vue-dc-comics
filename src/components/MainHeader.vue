@@ -79,10 +79,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+   @import '../css/variables.scss';
+   @import '../css/mixins.scss';
+
    nav {
-      display: flex;
-      justify-content: space-between;
+      @include display-flex-between;
       align-items: center;
       padding: 1rem 0rem;
    }
@@ -93,22 +95,26 @@ export default {
 
    ul {
       list-style: none;
-   }
 
-   ul li {
-      display: inline-block;
-      padding: .8rem;
-      font-size: .75rem;
-      text-transform: uppercase;
-      font-weight: 600;
+      li {
+         font-size: $link_size;
+         text-transform: $font_uppercase;
+         display: inline-block;
+         padding: .8rem;
+         font-weight: 600;
+      }
    }
 
    #nav-menu a {
+      color: $font_primary;
       text-decoration: none;
-      color: #212112;
-   }
 
-   #nav-menu a.active {
-      color: #3682F9;
+      &.active {
+         color: $brand_primary;
+      }
+
+      &:hover {
+         color: $brand_secondary;
+      }
    }
 </style>

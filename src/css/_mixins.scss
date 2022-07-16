@@ -9,7 +9,7 @@
 
 /// Blocks
 
-@mixin display-flex {
+@mixin display-flex-between {
    display: flex;
    justify-content: space-between;
 }

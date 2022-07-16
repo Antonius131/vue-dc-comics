@@ -1,7 +1,7 @@
 <template>
   <div class="secondary-footer">
     <div class="container">
-      <nav>
+      <nav class="d-flex">
           <div id="logo">
             <button type="button" class="btn">Sign up now!</button>
           </div>
@@ -71,49 +71,43 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+ @import '../css/_mixins.scss';
+@import '../css/_variables.scss';
   .secondary-footer {
-    background-color: #303030;
+    background-color: $bg_secondary;
     padding: 1.5rem 0rem;
   }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .d-flex {
-    display: flex;
-    justify-content: space-between;
+    @include display-flex-between;
     align-items: center;
   }
 
   ul {
+    font-size: $link_size;
+    color: $font_secondary;
     list-style: none;
-    font-size: .75rem;
-    color: rgba(255,255,255,.4);
+
+    li {
+      text-transform: $font_uppercase;
+      display: inline-block;
+      margin: 0rem .5rem;
+      font-weight: 600;
+    }
+    
+    img {
+      height: 1.5rem;
+    }
   }
 
   h4 {
-    color: #3682F9;
+    color: $brand_primary;
   }
-
-  ul li {
-    display: inline-block;
-    margin: 0rem .5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  ul img {
-  height: 1.5rem;
-  }
-
   button.btn {
     padding: .5rem;
     background-color: transparent;
-    border: 2px solid #3682F9;
+    border: 2px solid $brand_primary;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: $font_uppercase;
   }
 </style>

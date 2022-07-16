@@ -181,28 +181,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import '../css/variables.scss';
+  @import '../css/mixins.scss';
   .primary-footer {
-    background-image: url(../assets/img/footer-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
+    @include background-image('../assets/img/footer-bg.jpg');
+    color: $font_secondary;
   }
 
   .d-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-flex-between;
   }
 
   #footer-nav {
     width: 55%;
-    padding: 2rem 0rem;
+    padding: $padding_row;
   }
 
   #nav-items-block {
     display: flex;
-    align-content: space-between;
   }
 
   .item-block {
@@ -211,24 +208,25 @@ export default {
 
   .item {
     margin-bottom: 1rem;
-  }
 
-  .item h4 {
-    text-transform: uppercase;
-    margin-bottom: .55rem;
-  }
+    ul {
+      list-style: none;
+      font-size: .75rem;
+    }
 
-  .item ul {
-    list-style: none;
-    font-size: .75rem;
-  }
+    li {
+      padding: .2rem;
+    }
 
-  .item li {
-    padding: .2rem;
-  }
-  .item a {
-    text-decoration: none;
-    color: rgba(255,255,255,.5);
+    h4 {
+      text-transform: $font_uppercase;
+      margin-bottom: .55rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $font_secondary_rgba;
+    }
   }
 
   #dc-image {

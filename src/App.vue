@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
+  @import 'css/variables.scss';
+  @import 'css/mixins.scss';
+
   * {
     margin: 0;
     padding: 0;
@@ -34,7 +37,7 @@ export default {
   }
 
   .container {
-    width: 70%;
+    width: $width_container;
     margin: 0 auto;
   }
 </style>
