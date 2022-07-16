@@ -5,7 +5,7 @@
           <div id="logo">
             <button type="button" class="btn">Sign up now!</button>
           </div>
-          <div>
+          <nav>
             <ul class="d-flex">
               <li>
                 <h4>Follow us</h4>
@@ -26,7 +26,7 @@
                 <img src="../assets/img/footer-periscope.png" alt="Periscope ico">
               </li>
             </ul>
-          </div>
+          </nav>
       </nav>
     </div>
   </div>
@@ -41,14 +41,13 @@ export default {
 <style scoped>
   .secondary-footer {
     background-color: #303030;
-    padding: .5rem 0rem;
+    padding: 1.5rem 0rem;
   }
 
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0rem;
   }
   .d-flex {
     display: flex;
@@ -76,7 +75,7 @@ export default {
   }
 
   button.btn {
-    padding: .75rem;
+    padding: .5rem;
     background-color: transparent;
     border: 2px solid #3682F9;
     color: #fff;
