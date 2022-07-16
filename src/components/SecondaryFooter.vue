@@ -29,33 +29,42 @@ export default {
           fileName: 'footer-facebook.png',
           alt: 'Facebook ico',
           link: '#',
-          path: '../assets/img/'
+          path: '/assets/img/'
         },
         {
           fileName: 'footer-twitter.png',
           alt: 'Twitter ico',
           link: '#',
-          path: '../assets/img/'
+          path: '/assets/img/'
         },
         {
           fileName: 'footer-youtube.png',
           alt: 'YouTUbe ico',
           link: '#',
-          path: '../assets/img/'
+          path: '/assets/img/'
         },
         {
           fileName: 'footer-pinterest.png',
           alt: 'Pinterest ico',
           link: '#',
-          path: '../assets/img/'
+          path: '/assets/img/'
         },
         {
           fileName: 'footer-periscope.png',
           alt: 'Periscope ico',
           link: '#',
-          path: '../assets/img/'
+          path: '/assets/img/'
         }
       ]
+    }
+  },
+
+  methods: {
+    imagePath(index) {
+      const path = this.socialIcons[index].path;
+      const fileName = this.socialIcons[index].fileName;
+
+      return `${path}${fileName}`;
     }
   }
 }
