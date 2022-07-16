@@ -30,31 +30,31 @@ export default {
           fileName: 'footer-facebook.png',
           alt: 'Facebook ico',
           link: '#',
-          path: '/assets/img/'
+          path: '../assets/img/'
         },
         {
           fileName: 'footer-twitter.png',
           alt: 'Twitter ico',
           link: '#',
-          path: '/assets/img/'
+          path: '../assets/img/'
         },
         {
           fileName: 'footer-youtube.png',
           alt: 'YouTUbe ico',
           link: '#',
-          path: '/assets/img/'
+          path: '../assets/img/'
         },
         {
           fileName: 'footer-pinterest.png',
           alt: 'Pinterest ico',
           link: '#',
-          path: '/assets/img/'
+          path: '../assets/img/'
         },
         {
           fileName: 'footer-periscope.png',
           alt: 'Periscope ico',
           link: '#',
-          path: '/assets/img/'
+          path: '../assets/img/'
         }
       ]
     }
@@ -90,6 +90,8 @@ export default {
 
   ul {
     list-style: none;
+    font-size: .75rem;
+    color: rgba(255,255,255,.4);
   }
 
   h4 {
