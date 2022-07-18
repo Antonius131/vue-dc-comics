@@ -93,14 +93,21 @@ export default {
             ]
         };
     },
-    components: { ComicsList }
+    components: { 
+      ComicsList 
+    }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   main {
     background-color: #1c1c1c;
     padding: 2rem 0rem;
     color: #fff;
+  }
+
+  #comics-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 </style>
