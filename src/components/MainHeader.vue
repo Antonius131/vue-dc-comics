@@ -16,68 +16,73 @@
             </ul>
          </div>
       </nav>
+      <MainJumbotron />
    </div>
   </header>
 </template>
 
 <script>
+import MainJumbotron from './MainJumbotron.vue'
+
+
 export default {
-   data: function() {
-      return {
-         navMenuItems: [
-            {
-               text: 'characters',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'comics',
-               link: '#',
-               active: true, 
-            },
-            {
-               text: 'movies',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'tv',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'games',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'collectibles',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'videos',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'fans',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'news',
-               link: '#',
-               active: false, 
-            },
-            {
-               text: 'shop',
-               link: '#',
-               active: false, 
-            },
-         ]
-      }
-   }
+    data: function () {
+        return {
+            navMenuItems: [
+                {
+                    text: "characters",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "comics",
+                    link: "#",
+                    active: true,
+                },
+                {
+                    text: "movies",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "tv",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "games",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "collectibles",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "videos",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "fans",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "news",
+                    link: "#",
+                    active: false,
+                },
+                {
+                    text: "shop",
+                    link: "#",
+                    active: false,
+                },
+            ]
+        };
+    },
+    components: { MainJumbotron }
 }
 </script>
 
