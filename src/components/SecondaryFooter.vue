@@ -12,7 +12,7 @@
               </li>
               <li v-for="(icon, index) in socialIcons"
                   :key="index">
-                <img :src="imagePath(index)" :alt="icon.alt">
+                <img :src="require(`../assets/img/${icon.src}`)" :alt="icon.alt">
               </li>
             </ul>
           </nav>
@@ -27,45 +27,32 @@ export default {
     return {
       socialIcons: [
         {
-          fileName: 'footer-facebook.png',
+          src: 'footer-facebook.png',
           alt: 'Facebook ico',
-          link: '#',
-          path: '../assets/img/'
+          link: '#'
         },
         {
-          fileName: 'footer-twitter.png',
+          src: 'footer-twitter.png',
           alt: 'Twitter ico',
-          link: '#',
-          path: '../assets/img/'
+          link: '#'
         },
         {
-          fileName: 'footer-youtube.png',
+          src: 'footer-youtube.png',
           alt: 'YouTUbe ico',
           link: '#',
-          path: '../assets/img/'
+
         },
         {
-          fileName: 'footer-pinterest.png',
+          src: 'footer-pinterest.png',
           alt: 'Pinterest ico',
-          link: '#',
-          path: '../assets/img/'
+          link: '#'
         },
         {
-          fileName: 'footer-periscope.png',
+          src: 'footer-periscope.png',
           alt: 'Periscope ico',
-          link: '#',
-          path: '../assets/img/'
+          link: '#'
         }
       ]
-    }
-  },
-
-  methods: {
-    imagePath(index) {
-      const path = this.socialIcons[index].path;
-      const fileName = this.socialIcons[index].fileName;
-
-      return `${path}${fileName}`;
     }
   }
 }

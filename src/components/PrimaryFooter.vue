@@ -177,7 +177,9 @@ export default {
             ],
         };
     },
-    components: { SecondaryFooter }
+    components: { 
+      SecondaryFooter 
+    }
 }
 </script>
 
