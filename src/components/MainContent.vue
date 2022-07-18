@@ -1,12 +1,17 @@
 <template>
   <main>
     <div class="container">
-      <h3>Current series</h3>
+      <div class="comic-title">
+        <h3>Current series</h3>
+      </div>
       <div id="comics-list">
         <ComicsList v-for="(comic, index) in comicsList" :key="index"
           :comicThumb="comic.thumb"
           :comicSeries="comic.series"
         />
+      </div>
+      <div class="content-options">
+        <button type="button">Load more</button>
       </div>
     </div>
   </main>
@@ -100,14 +105,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../css/_variables.scss';
+
   main {
     background-color: #1c1c1c;
     padding: 2rem 0rem;
     color: #fff;
   }
 
+  .comic-title {
+    margin-top: -2.75rem;
+
+      h3 {
+        background-color: $brand_primary;
+        font-size: $link_size;
+        text-transform: $font-uppercase;
+        display: inline-block;
+        padding: .5rem 1rem;
+      }
+  }
+
   #comics-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  .content-options {
+    text-align: center;
+
+    button {
+      background-color: $brand_primary;
+      color: $font_secondary;
+      text-transform: $font_uppercase;
+      border: none;
+      padding: .5rem 2rem;
+    }
   }
 </style>

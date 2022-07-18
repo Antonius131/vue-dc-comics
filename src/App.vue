@@ -37,6 +37,7 @@ export default {
   }
 
   .container {
+    position: relative;
     width: $width_container;
     margin: 0 auto;
   }
