@@ -1,7 +1,17 @@
 <template>
   <main>
     <div class="container">
-      <h3>Content goes here</h3>
+      <h3>Current series</h3>
+      <div id="comics-list">
+        <div class="card">
+          <div class="comic-front">
+            <img src="" alt="">
+          </div>
+          <h4>
+            Title
+          </h4>
+        </div>
+      </div>
     </div>
   </main>
 </template>
