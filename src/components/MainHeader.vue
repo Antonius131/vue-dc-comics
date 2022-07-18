@@ -16,8 +16,8 @@
             </ul>
          </div>
       </nav>
-      <MainJumbotron />
    </div>
+   <MainJumbotron />
   </header>
 </template>
 
